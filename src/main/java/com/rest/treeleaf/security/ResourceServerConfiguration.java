@@ -36,7 +36,7 @@ public class ResourceServerConfiguration extends ResourceServerConfigurerAdapter
                 .antMatchers("/api/signin/**").permitAll()
                 .antMatchers("/api/user/**").permitAll()
                 .antMatchers(HttpMethod.DELETE, "/api/oauth/token**").authenticated()
-                .antMatchers("/api/company/**").authenticated()
+                .antMatchers("/api/blog-post/**").authenticated()
                 .antMatchers("/api/school/**").authenticated()
                 .anyRequest().authenticated()
                 .and()

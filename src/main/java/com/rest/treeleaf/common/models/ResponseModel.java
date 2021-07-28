@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class ResponseModel<D, M> {
+public class ResponseModel<D,M> {
     private D data;
     private M meta;
 }
