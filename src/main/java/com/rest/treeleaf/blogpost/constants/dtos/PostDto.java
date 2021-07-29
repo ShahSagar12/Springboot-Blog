@@ -7,6 +7,7 @@ import lombok.Data;
 @Data
 @AllArgsConstructor
 public class PostDto {
+	private String blogId;
 	private String postTopics;
 	private String postBody;
 	private MultipartFile thumbnail;

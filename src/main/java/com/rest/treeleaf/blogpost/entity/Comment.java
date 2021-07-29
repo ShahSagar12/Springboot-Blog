@@ -10,11 +10,13 @@ import com.rest.treeleaf.common.models.AuditModel;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lombok.ToString;
 
 @Entity
 @Getter
 @Setter
 @NoArgsConstructor
+@ToString
 public class Comment extends AuditModel{
 	
 	/**
@@ -29,12 +31,12 @@ public class Comment extends AuditModel{
 	private String comment;
 	private Long userId;
 	private String commentId;
-	private boolean active;
+	private String blogId;
 	
-	public Comment(String comment, Long userId, String commentId, boolean active) {
+	public Comment(String comment, Long userId, String commentId, String blogId) {
 		this.comment = comment;
 		this.userId = userId;
 		this.commentId = commentId;
-		this.active = active;
+		this.blogId = blogId;
 	}
 }
